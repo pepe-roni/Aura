@@ -1,13 +1,15 @@
 <html>
 <script type="text/javascript">
 	window.onload = speak
+	var dialogue = "Hello, Im Constance"
 	function speak() 
 	{
-		responsiveVoice.setDefaultVoice("UK English Male");
+		responsiveVoice.setDefaultVoice("UK English Female");
+
 	}
 
 </script>
 <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 
-<input onclick="responsiveVoice.speak('Hello World');" type="button" value="Play" />
+<input onclick="responsiveVoice.speak(dialogue);" type="button" value="Play" />
 </html>
